@@ -1,0 +1,144 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Tue Apr 10 13:21:09 2018
+| Host         : XHDJAYESHK30 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file wave_gen_methodology_drc_routed.rpt -pb wave_gen_methodology_drc_routed.pb -rpx wave_gen_methodology_drc_routed.rpx
+| Design       : wave_gen
+| Device       : xc7k70tfbg484-2
+| Speed File   : -2
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 16
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                           | 2          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                       | 1          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port               | 10         |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf18e1_inst.sngfifo18e1_i_1, with 2 or more inputs, drives asynchronous reset pin(s) char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell rst_gen_i0/reset_bridge_clk_rx_i0_i_1, with 2 or more inputs, drives asynchronous reset pin(s) rst_gen_i0/reset_bridge_clk_rx_i0/rst_dst_reg/PRE, rst_gen_i0/reset_bridge_clk_rx_i0/rst_meta_reg/PRE, rst_gen_i0/reset_bridge_clk_samp_i0/rst_dst_reg/PRE, rst_gen_i0/reset_bridge_clk_samp_i0/rst_meta_reg/PRE, rst_gen_i0/reset_bridge_clk_tx_i0/rst_dst_reg/PRE, rst_gen_i0/reset_bridge_clk_tx_i0/rst_meta_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 -name clk_pin_p -waveform {0.000 2.500} [get_ports clk_pin_p] (Source: c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 2))
+Previous: create_clock -period 5.000 [get_ports clk_pin_p] (Source: c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/sources_1/ip/clk_core/clk_core.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 -name clk_pin_p -waveform {0.000 2.500} [get_ports clk_pin_p] (Source: c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 2))
+Previous: create_clock -period 5.000 [get_ports clk_pin_p] (Source: c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/sources_1/ip/clk_core/clk_core.xdc (Line: 56))
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.200 ns has been defined on port 'spi_clk_pin' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual -clock_fall -add_delay 0.200 [get_ports spi_clk_pin]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[0]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[1]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[2]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[3]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[4]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[5]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[6]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'led_pins[7]' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'txd_pin' relative to clock clk_tx_virtual for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_tx_virtual 1.000 [get_ports {txd_pin spi_clk_pin {led_pins[*]}}]
+c:/training/Basic_Dsgn_Analysis/lab/KC7xx/verilog/wave_gen.srcs/constrs_1/imports/verilog/wave_gen_timing.xdc (Line: 10)
+Related violations: <none>
+
+

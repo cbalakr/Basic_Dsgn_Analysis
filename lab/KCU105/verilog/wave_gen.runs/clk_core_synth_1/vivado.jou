@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Apr 10 13:07:15 2018
+# Process ID: 30816
+# Current directory: c:/training/Basic_Dsgn_Analysis/lab/KCU105/verilog/wave_gen.runs/clk_core_synth_1
+# Command line: vivado.exe -log clk_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_core.tcl
+# Log file: c:/training/Basic_Dsgn_Analysis/lab/KCU105/verilog/wave_gen.runs/clk_core_synth_1/clk_core.vds
+# Journal file: c:/training/Basic_Dsgn_Analysis/lab/KCU105/verilog/wave_gen.runs/clk_core_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_core.tcl -notrace

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/training/golden/labs/ProjNav/wave_gen/kintex7/vhdl/tb_wave_gen_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="math_real" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="string_utilities_sim_pkg" />
+            <top_module name="string_utilities_synth_pkg" />
+            <top_module name="tb_wave_gen" />
+            <top_module name="tb_wave_gen_helper_pkg" />
+            <top_module name="textio" />
+            <top_module name="time_utilities_pkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="wave_gen_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wave_markers>
+      <marker time="25534992000" label="" />
+      <marker time="32244000000" label="" />
+      <marker time="76977572000" label="" />
+   </wave_markers>
+   <wvobject fp_name="group63" type="group">
+      <obj_property name="label">Clocks</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_wave_gen/clk_pin_p" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_pin_p</obj_property>
+         <obj_property name="ObjectShortName">clk_pin_p</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/clk_pin_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_pin_n</obj_property>
+         <obj_property name="ObjectShortName">clk_pin_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/rst_pin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_pin</obj_property>
+         <obj_property name="ObjectShortName">rst_pin</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group62" type="group">
+      <obj_property name="label">CMD_GEN</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider54" type="divider">
+         <obj_property name="label">CMD_GEN</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_cmd_gen_i0/command_string" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">command_string[1:32]</obj_property>
+         <obj_property name="ObjectShortName">command_string[1:32]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_cmd_gen_i0/more_commands_available" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">more_commands_available</obj_property>
+         <obj_property name="ObjectShortName">more_commands_available</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_cmd_gen_i0/next_command_request" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">next_command_request</obj_property>
+         <obj_property name="ObjectShortName">next_command_request</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group61" type="group">
+      <obj_property name="label">UART_Driver</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider58" type="divider">
+         <obj_property name="label">UART_Driver</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_uart_driver_i0/next_command_request" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">next_command_request</obj_property>
+         <obj_property name="ObjectShortName">next_command_request</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_uart_driver_i0/command_string" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">command_string[1:32]</obj_property>
+         <obj_property name="ObjectShortName">command_string[1:32]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_uart_driver_i0/more_commands_available" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">more_commands_available</obj_property>
+         <obj_property name="ObjectShortName">more_commands_available</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_uart_driver_i0/debug_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">debug_state</obj_property>
+         <obj_property name="ObjectShortName">debug_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_uart_driver_i0/serial_data_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">serial_data_out</obj_property>
+         <obj_property name="ObjectShortName">serial_data_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group60" type="group">
+      <obj_property name="label">DUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider63" type="divider">
+         <obj_property name="label">DUT</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/rst_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_i</obj_property>
+         <obj_property name="ObjectShortName">rst_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/rxd_pin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_pin</obj_property>
+         <obj_property name="ObjectShortName">rxd_pin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/txd_pin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_pin</obj_property>
+         <obj_property name="ObjectShortName">txd_pin</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group63" type="group">
+      <obj_property name="label">cmd_parser</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/cmd_parse_i0/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/cmd_parse_i0/rx_data_rdy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_data_rdy</obj_property>
+         <obj_property name="ObjectShortName">rx_data_rdy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/cmd_parse_i0/rx_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/cmd_parse_i0/arg_val" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">arg_val[31:0]</obj_property>
+         <obj_property name="ObjectShortName">arg_val[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/cmd_parse_i0/send_resp_type" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">send_resp_type</obj_property>
+         <obj_property name="ObjectShortName">send_resp_type</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/cmd_parse_i0/send_resp_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">send_resp_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">send_resp_data[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group65" type="group">
+      <obj_property name="label">uart_rx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/cmd_parse_i0/clk_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_rx</obj_property>
+         <obj_property name="ObjectShortName">clk_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/rxd_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_i</obj_property>
+         <obj_property name="ObjectShortName">rxd_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/rxd_clk_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_clk_rx</obj_property>
+         <obj_property name="ObjectShortName">rxd_clk_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/uart_rx_ctl_i0/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/uart_baud_gen_rx_i0/baud_x16_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">baud_x16_en</obj_property>
+         <obj_property name="ObjectShortName">baud_x16_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/uart_rx_ctl_i0/bit_cnt" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_cnt</obj_property>
+         <obj_property name="ObjectShortName">bit_cnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/rx_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/uart_rx_ctl_i0/over_sample_cnt_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">over_sample_cnt_done</obj_property>
+         <obj_property name="ObjectShortName">over_sample_cnt_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/inst_wave_gen/uart_rx_i0/rx_data_rdy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_data_rdy</obj_property>
+         <obj_property name="ObjectShortName">rx_data_rdy</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">RESPONSE_CHECKER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider80" type="divider">
+         <obj_property name="label">RESPONSECHECKER</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_resp_checker_i0/start_response_checker" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">start_response_checker</obj_property>
+         <obj_property name="ObjectShortName">start_response_checker</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_resp_checker_i0/data_from_uut" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">data_from_uut</obj_property>
+         <obj_property name="ObjectShortName">data_from_uut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_resp_checker_i0/data_from_fifo" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">data_from_fifo</obj_property>
+         <obj_property name="ObjectShortName">data_from_fifo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_resp_checker_i0/read_fifo" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">read_fifo</obj_property>
+         <obj_property name="ObjectShortName">read_fifo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_resp_checker_i0/data_ready" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">data_ready</obj_property>
+         <obj_property name="ObjectShortName">data_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_resp_checker_i0/fifo_empty" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">fifo_empty</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group58" type="group">
+      <obj_property name="label">UART_Monitor</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider81" type="divider">
+         <obj_property name="label">UART_Monitor</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/character_from_monitor" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">character_from_monitor</obj_property>
+         <obj_property name="ObjectShortName">character_from_monitor</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/char_from_monitor_valid" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">char_from_monitor_valid</obj_property>
+         <obj_property name="ObjectShortName">char_from_monitor_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/serial_data_from_design" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">serial_data_from_design</obj_property>
+         <obj_property name="ObjectShortName">serial_data_from_design</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/start_uart_monitor" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">start_uart_monitor</obj_property>
+         <obj_property name="ObjectShortName">start_uart_monitor</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group57" type="group">
+      <obj_property name="label">WaveGen_Model</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider69" type="divider">
+         <obj_property name="label">WaveGen_Model</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_wavegen_model_i0/response_valid" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">response_valid</obj_property>
+         <obj_property name="ObjectShortName">response_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_wavegen_model_i0/fifo_full" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_full</obj_property>
+         <obj_property name="ObjectShortName">fifo_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_wavegen_model_i0/response" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">response</obj_property>
+         <obj_property name="ObjectShortName">response</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group56" type="group">
+      <obj_property name="label">FIFO_MODEL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider75" type="divider">
+         <obj_property name="label">FIFO_MODEL</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_char_fifo_i0/character_in" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">character_in</obj_property>
+         <obj_property name="ObjectShortName">character_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_char_fifo_i0/character_in_valid" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">character_in_valid</obj_property>
+         <obj_property name="ObjectShortName">character_in_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wave_gen/tb_char_fifo_i0/character_out" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">character_out</obj_property>
+         <obj_property name="ObjectShortName">character_out</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
